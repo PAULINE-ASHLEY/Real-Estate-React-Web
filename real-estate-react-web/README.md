@@ -1,20 +1,27 @@
-Project Name
+# Project Name
+
 Real Estate Website
 
-DESCRIPTION
+## DESCRIPTION
+
 This is a fully functional and responsive website that allows one to locate houses and book.
 
-BUILT USING
+## BUILT USING
+
 The website is using React.js and Tailwind. 
 
-Author
+## AUTHOR
+
 👤 Pauline Ondiek
+
+## SOCIAL PLATFORMS
 
 GitHub: @PAULINE-ASHLEY
 Twitter: @PAULINE_ONDIEK
 LinkedIn: Pauline Ondiek
 
-SETUP
+## SETUP
+
 To setup git clone https://github.com/PAULINE-ASHLEY/Real-Estate-React-Web.git 
 
 # Getting Started with Real Estate Website
