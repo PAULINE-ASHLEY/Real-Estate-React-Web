@@ -8,7 +8,7 @@ This is a fully functional and responsive website that allows one to locate hous
 
 ## BUILT USING
 
-The website is using React.js and Tailwind. 
+The website is using React.js and Tailwind.
 
 ## AUTHOR
 
@@ -22,7 +22,7 @@ LinkedIn: Pauline Ondiek
 
 ## SETUP
 
-To setup git clone https://github.com/PAULINE-ASHLEY/Real-Estate-React-Web.git 
+To setup git clone https://github.com/PAULINE-ASHLEY/Real-Estate-React-Web.git
 
 # Getting Started with Real Estate Website
 
