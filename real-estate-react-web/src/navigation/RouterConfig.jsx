@@ -1,8 +1,30 @@
 import React from 'react';
 // import { ProtectedRoutes } from 'components/guards';
-import { Home, Buy, Rent, Contact } from 'pages';
+import {
+	Home,
+	Buy,
+	Rent,
+	Contact,
+	Nairobi,
+	Mombasa,
+	Kisumu,
+	Nakuru,
+	Naivasha,
+	Kilifi,
+} from 'pages';
 import { Route, Routes } from 'react-router-dom';
-import { HOME, BUY, RENT, CONTACT } from 'navigation/constants';
+import {
+	HOME,
+	BUY,
+	RENT,
+	CONTACT,
+	NAIROBI,
+	KISUMU,
+	MOMBASA,
+	NAKURU,
+	NAIVASHA,
+	KILIFI,
+} from 'navigation/constants';
 
 function RouterConfig() {
 	return (
@@ -14,6 +36,12 @@ function RouterConfig() {
 			<Route path={BUY} element={<Buy />} />
 			<Route path={RENT} element={<Rent />} />
 			<Route path={CONTACT} element={<Contact />} />
+			<Route path={NAIROBI} element={<Nairobi />} />
+			<Route path={MOMBASA} element={<Mombasa />} />
+			<Route path={KISUMU} element={<Kisumu />} />
+			<Route path={NAKURU} element={<Nakuru />} />
+			<Route path={NAIVASHA} element={<Naivasha />} />
+			<Route path={KILIFI} element={<Kilifi />} />
 
 			{/*************************PROTECTED ROUTES************************************** */}
 			{/* <Route element={<ProtectedRoutes redirectPath={LOGIN} />}> */}
