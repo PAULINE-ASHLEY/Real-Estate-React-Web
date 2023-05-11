@@ -1,7 +1,7 @@
 import React from 'react';
 import { PageWrapper } from 'components/modules/wrapper';
-function HomeView() {
+function NairobiView() {
 	return <PageWrapper></PageWrapper>;
 }
 
-export default HomeView;
+export default NairobiView;
