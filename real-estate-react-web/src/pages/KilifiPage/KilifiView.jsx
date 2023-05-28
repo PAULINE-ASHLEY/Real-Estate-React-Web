@@ -1,7 +1,7 @@
 import React from 'react';
 import { PageWrapper } from 'components/modules/wrapper';
-function HomeView() {
+function KilifiView() {
 	return <PageWrapper></PageWrapper>;
 }
 
-export default HomeView;
+export default KilifiView;
