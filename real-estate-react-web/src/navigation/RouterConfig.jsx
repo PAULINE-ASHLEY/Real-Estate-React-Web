@@ -44,9 +44,9 @@ function RouterConfig() {
 			<Route path={KILIFI} element={<Kilifi />} />
 
 			{/*************************PROTECTED ROUTES************************************** */}
-			{/* <Route element={<ProtectedRoutes redirectPath={LOGIN} />}> */}
-			{/* LIST ALL PROTECTED ROUTES HERE */}
-			{/* </Route> */}
+			{/* <Route element={<ProtectedRoutes redirectPath={LOGIN} />}>
+				LIST ALL PROTECTED ROUTES HERE
+			</Route> */}
 
 			{/*************************404************************************** */}
 
