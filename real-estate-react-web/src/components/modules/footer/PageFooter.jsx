@@ -8,6 +8,8 @@ import {
 	LinkedInButton,
 	TwitterButton,
 	YoutubeButton,
+	EmailButton,
+	LocationButton,
 } from 'components/widgets/Buttons';
 
 function PageFooter() {
@@ -16,40 +18,52 @@ function PageFooter() {
 			<div className='text-white grid grid-cols-3'>
 				<div>
 					<Link to='/' className='shrink-0 grow-0 rounded-full'>
-						<img src={logo} width={80} height={80} alt='restaurant logo' />
+						<img src={logo} width={60} height={60} alt='restaurant logo' />
 					</Link>
-					<p className='pt-2'>
-						Get more for your money with a great <br />
-						real estate professional.
+					<p className='pt-6 text-xl font-medium'>Real Paradise</p>
+					<p className='pt-2 font-normal'>
+						Search all homes for sale, check out home <br />
+						values in the neighborhood and get advice <br /> on buying or
+						selling from our experts.
 					</p>
 				</div>
 				<div>
-					<h3 className='font-bold text-2xl mt-5 mb-2 text-white'>Navigate</h3>
+					<h3 className='font-semibold text-2xl mt-5 mb-2 text-white'>
+						Navigate
+					</h3>
 					<div className='grid gap-2 grid-cols-2 mt-6'>
 						<div className='flex flex-col'>
 							<LinkButton to='/'>Home</LinkButton>
-							<LinkButton to='/Contact'>Contact Us</LinkButton>
+							<LinkButton to='/'>News</LinkButton>
+							<LinkButton to='/Contact'>Contact</LinkButton>
+							<LinkButton to='/'>Developments</LinkButton>
+							<LinkButton to='/'>Get In Touch</LinkButton>
 						</div>
 
 						<div className='flex flex-col'>
 							<LinkButton to='/Buy'>Buy</LinkButton>
 							<LinkButton to='/Rent'>Rent</LinkButton>
+							<LinkButton to='/'>Careers</LinkButton>
+							<LinkButton to='/'>Services</LinkButton>
+							<LinkButton to='/'>Privacy Policy</LinkButton>
 						</div>
 					</div>
 				</div>
 				<div>
-					<h3 className='font-bold text-2xl mt-5 mb-2 text-white'>
+					<h3 className='font-semibold text-2xl mt-5 mb-2 text-white'>
 						Contact Us
 					</h3>
-					<p className='text-white'>
-						5900 Balcones Drive STE 100 Austin, TX
-						<br />
-						78731, Austin, Texas, United States Of America
-					</p>
-					<p className='text-white'>
-						<p className='text-white'>info@blackwomancan.com</p>
-					</p>
-					<h3 className='font-bold text-2xl mt-5 mb-2'>Get In Touch With Us</h3>
+					<div className='text-white flex gap-x-2'>
+						<LocationButton />
+						5040 Real Paradise, Kenya
+					</div>
+					<div className='text-white flex gap-x-2 pt-4'>
+						<EmailButton />
+						info@realparadise.com
+					</div>
+					<h3 className='font-semibold text-2xl mt-5 mb-2'>
+						Get In Touch With Us
+					</h3>
 					<div className='flex gap-x-4'>
 						<InstagramButton />
 						<LinkedInButton />
@@ -62,8 +76,8 @@ function PageFooter() {
 
 			<div className='text-white grid grid-cols-3 w-full'>
 				<div>
-					<p className='text-white font-semibold pt-4'>
-						© Copyright 2022 BWC All rights reserved.
+					<p className='text-white font-normal pt-4'>
+						© Copyright 2023 BWC All rights reserved.
 					</p>
 				</div>
 				<div></div>

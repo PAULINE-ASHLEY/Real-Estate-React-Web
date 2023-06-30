@@ -16,7 +16,7 @@ const NavBar = () => {
 						<ion-icon name={`${open ? 'close' : 'menu'}`}></ion-icon>
 					</div>
 				</div>
-				<ul className='md:flex hidden items-center gap-8 text-xl'>
+				<ul className='md:flex hidden items-center gap-8 text-xl font-normal'>
 					<li>
 						<Link to='/' className='py-7 px-3 inline-block'>
 							Home
@@ -40,10 +40,10 @@ const NavBar = () => {
 					</li>
 				</ul>
 				<div className='flex justify-between gap-4'>
-					<button className='bg-white text-black rounded-full py-3 px-8 text-xl'>
+					<button className='bg-white text-black rounded-full py-3 px-8 text-xl font-normal'>
 						Sign In
 					</button>
-					<button className='bg-white text-black rounded-full py-3 px-8 text-xl'>
+					<button className='bg-white text-black rounded-full py-3 px-8 text-xl font-normal'>
 						Sign Up
 					</button>
 				</div>

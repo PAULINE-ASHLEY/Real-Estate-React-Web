@@ -6,7 +6,7 @@ function LinkButton(props) {
 	const { children } = props;
 	const newProps = {
 		className:
-			'btn btn-link justify-start text-base-100 capitalize py-1 px-1 h-min max-w-[max-content] font-semibold',
+			'btn btn-link justify-start text-base-100 capitalize py-1 px-1 h-min max-w-[max-content] font-normal',
 		...props,
 	};
 
