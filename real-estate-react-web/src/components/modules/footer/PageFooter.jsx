@@ -18,23 +18,29 @@ function PageFooter() {
 					<Link to='/' className='shrink-0 grow-0 rounded-full'>
 						<img src={logo} width={150} height={150} alt='restaurant logo' />
 					</Link>
+					<p className='pt-2'>
+						Get more for your money with a great <br />
+						real estate professional
+					</p>
 				</div>
 				<div>
-					<h3 className='text-2xl mt-5 mb-2 text-white'>Navigate</h3>
+					<h3 className='font-bold text-2xl mt-5 mb-2 text-white'>Navigate</h3>
 					<div className='grid gap-2 grid-cols-2 mt-6'>
 						<div className='flex flex-col'>
 							<LinkButton to='/'>Home</LinkButton>
-							<LinkButton to='/'>About Us</LinkButton>
+							<LinkButton to='/Contact'>Contact Us</LinkButton>
 						</div>
 
 						<div className='flex flex-col'>
-							<LinkButton to='/'>Blog</LinkButton>
-							<LinkButton to='/'>Our Partners</LinkButton>
+							<LinkButton to='/Buy'>Buy</LinkButton>
+							<LinkButton to='/Rent'>Rent</LinkButton>
 						</div>
 					</div>
 				</div>
 				<div>
-					<h3 className='text-2xl mt-5 mb-2 text-white'>Contact Us</h3>
+					<h3 className='font-bold text-2xl mt-5 mb-2 text-white'>
+						Contact Us
+					</h3>
 					<p className='text-white'>
 						5900 Balcones Drive STE 100 Austin, TX
 						<br />
