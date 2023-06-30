@@ -10,8 +10,8 @@ const NavBar = () => {
 		<nav>
 			<div className='flex items-center font-semibold justify-around'>
 				<div className='z-50 md:w-auto w-full flex justify-between gap-2'>
-					<img src={logo} alt='logo' className='md:cursor-pointer h-20' />
-					<p className='pt-6 text-2xl'>Real Paradise</p>
+					<img src={logo} alt='logo' width={60} height={60} />
+					<p className='pt-4 text-xl'>Real Paradise</p>
 					<div className='text-3xl md:hidden' onClick={() => setOpen(!open)}>
 						<ion-icon name={`${open ? 'close' : 'menu'}`}></ion-icon>
 					</div>
@@ -40,10 +40,10 @@ const NavBar = () => {
 					</li>
 				</ul>
 				<div className='flex justify-between gap-4'>
-					<button className='bg-white text-black rounded-full py-3 px-6'>
+					<button className='bg-white text-black rounded-full py-3 px-8 text-xl'>
 						Sign In
 					</button>
-					<button className='bg-white text-black rounded-full py-3 px-6'>
+					<button className='bg-white text-black rounded-full py-3 px-8 text-xl'>
 						Sign Up
 					</button>
 				</div>

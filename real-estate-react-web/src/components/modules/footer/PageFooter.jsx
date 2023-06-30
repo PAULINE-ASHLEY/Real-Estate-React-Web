@@ -16,11 +16,11 @@ function PageFooter() {
 			<div className='text-white grid grid-cols-3'>
 				<div>
 					<Link to='/' className='shrink-0 grow-0 rounded-full'>
-						<img src={logo} width={150} height={150} alt='restaurant logo' />
+						<img src={logo} width={80} height={80} alt='restaurant logo' />
 					</Link>
 					<p className='pt-2'>
 						Get more for your money with a great <br />
-						real estate professional
+						real estate professional.
 					</p>
 				</div>
 				<div>
