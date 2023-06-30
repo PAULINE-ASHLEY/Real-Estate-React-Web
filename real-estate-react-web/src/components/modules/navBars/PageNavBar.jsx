@@ -2,15 +2,16 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { logo } from 'assets/images';
 // import { Button } from 'components/widgets/Buttons';
-import NavBarLinks from './NavBarLinks';
+// import NavBarLinks from './NavBarLinks';
 
 const NavBar = () => {
 	const [open, setOpen] = useState(false);
 	return (
 		<nav>
-			<div className='flex items-center font-medium justify-around'>
-				<div className='z-50 md:w-auto w-full flex justify-between'>
+			<div className='flex items-center font-semibold justify-around'>
+				<div className='z-50 md:w-auto w-full flex justify-between gap-2'>
 					<img src={logo} alt='logo' className='md:cursor-pointer h-20' />
+					<p className='pt-6 text-2xl'>Real Paradise</p>
 					<div className='text-3xl md:hidden' onClick={() => setOpen(!open)}>
 						<ion-icon name={`${open ? 'close' : 'menu'}`}></ion-icon>
 					</div>
@@ -18,20 +19,33 @@ const NavBar = () => {
 				<ul className='md:flex hidden items-center gap-8 text-xl'>
 					<li>
 						<Link to='/' className='py-7 px-3 inline-block'>
-							HOME
+							Home
 						</Link>
 					</li>
-					<NavBarLinks />
+					<li>
+						<Link to='/Buy' className='py-7 px-3 inline-block'>
+							Buy
+						</Link>
+					</li>
+					<li>
+						<Link to='/Rent' className='py-7 px-3 inline-block'>
+							Rent
+						</Link>
+					</li>
+					{/* <NavBarLinks /> */}
 					<li>
 						<Link to='/Contact' className='py-7 px-3 inline-block'>
-							CONTACT
+							Contact
 						</Link>
 					</li>
 				</ul>
-				<div className='md:block hidden'>
-					{/* <button className='bg-yellow text-black rounded-full py-3 px-6'>
-						DONATE NOW
-					</button> */}
+				<div className='flex justify-between gap-4'>
+					<button className='bg-white text-black rounded-full py-3 px-6'>
+						Sign In
+					</button>
+					<button className='bg-white text-black rounded-full py-3 px-6'>
+						Sign Up
+					</button>
 				</div>
 				{/* Mobile nav */}
 				<ul
@@ -45,7 +59,17 @@ const NavBar = () => {
 							Home
 						</Link>
 					</li>
-					<NavBarLinks />
+					<li>
+						<Link to='/Buy' className='py-7 px-3 inline-block'>
+							Buy
+						</Link>
+					</li>
+					<li>
+						<Link to='/Rent' className='py-7 px-3 inline-block'>
+							Rent
+						</Link>
+					</li>
+					{/* <NavBarLinks /> */}
 					<li>
 						<Link to='/Contact' className='py-7 px-3 inline-block'>
 							Contact
