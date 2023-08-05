@@ -11,6 +11,7 @@ module.exports = {
 			black: '#000000',
 			white: '#FFFFFF',
 			primary: '#FF0000',
+			blue: '#0000FF',
 		},
 		screens: {
 			sm: '512px',
@@ -20,13 +21,6 @@ module.exports = {
 			'2xl': '1536px',
 		},
 		extend: {
-			// backgroundImage: theme => ({
-			// 	'pattern': "url('aasets/images/home.jpg')",
-			//    }),
-			colors: {
-				neutral: '#000000',
-				blue: '#0000FF',
-			},
 			spacing: {
 				'25vh': '25vh',
 				'30vh': '30vh',

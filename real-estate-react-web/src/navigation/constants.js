@@ -1,10 +1,7 @@
 export const HOME = '/';
 export const BUY = '/Buy';
 export const RENT = '/Rent';
+export const SELL = '/Sell';
 export const CONTACT = '/Contact';
-export const NAIROBI = '/Nairobi';
-export const MOMBASA = '/Mombasa';
-export const KISUMU = '/Kisumu';
-export const NAKURU = '/Nakuru';
-export const NAIVASHA = '/Naivasha';
-export const KILIFI = '/Kilifi';
+export const SIGN_IN = '/SignIn';
+export const SIGN_UP = '/SignUp';

@@ -1,16 +1,16 @@
 import React from 'react';
 import { PageWrapper } from 'components/modules/wrapper';
-import { ContactUsForm } from 'components/layout/Forms';
-function ContactView() {
+import { SignInForm } from 'components/layout/Forms';
+function SignInView() {
 	return (
 		<div>
 			<PageWrapper>
 				<div>
-					<ContactUsForm />
+					<SignInForm />
 				</div>
 			</PageWrapper>
 		</div>
 	);
 }
 
-export default ContactView;
+export default SignInView;

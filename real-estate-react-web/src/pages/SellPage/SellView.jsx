@@ -1,7 +1,7 @@
 import React from 'react';
 import { PageWrapper } from 'components/modules/wrapper';
-function KisumuView() {
+function SellView() {
 	return <PageWrapper></PageWrapper>;
 }
 
-export default KisumuView;
+export default SellView;

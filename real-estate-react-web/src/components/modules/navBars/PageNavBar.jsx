@@ -32,6 +32,11 @@ const NavBar = () => {
 							Rent
 						</Link>
 					</li>
+					<li>
+						<Link to='/Sell' className='py-7 px-3 inline-block'>
+							Sell
+						</Link>
+					</li>
 					{/* <NavBarLinks /> */}
 					<li>
 						<Link to='/Contact' className='py-7 px-3 inline-block'>
@@ -41,10 +46,10 @@ const NavBar = () => {
 				</ul>
 				<div className='flex justify-between gap-4'>
 					<button className='bg-white text-black rounded-full py-3 px-8 text-xl font-normal'>
-						Sign In
+						<Link to='/SignIn'>Sign In</Link>
 					</button>
 					<button className='bg-white text-black rounded-full py-3 px-8 text-xl font-normal'>
-						Sign Up
+						<Link to='/SignUp'>Sign Up</Link>
 					</button>
 				</div>
 				{/* Mobile nav */}
@@ -67,6 +72,11 @@ const NavBar = () => {
 					<li>
 						<Link to='/Rent' className='py-7 px-3 inline-block'>
 							Rent
+						</Link>
+					</li>
+					<li>
+						<Link to='/Sell' className='py-7 px-3 inline-block'>
+							Sell
 						</Link>
 					</li>
 					{/* <NavBarLinks /> */}

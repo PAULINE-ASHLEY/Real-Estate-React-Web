@@ -1,29 +1,15 @@
 import React from 'react';
 // import { ProtectedRoutes } from 'components/guards';
-import {
-	Home,
-	Buy,
-	Rent,
-	Contact,
-	Nairobi,
-	Mombasa,
-	Kisumu,
-	Nakuru,
-	Naivasha,
-	Kilifi,
-} from 'pages';
+import { Home, Buy, Rent, Contact, SignIn, SignUp, Sell } from 'pages';
 import { Route, Routes } from 'react-router-dom';
 import {
 	HOME,
 	BUY,
 	RENT,
 	CONTACT,
-	NAIROBI,
-	KISUMU,
-	MOMBASA,
-	NAKURU,
-	NAIVASHA,
-	KILIFI,
+	SIGN_IN,
+	SIGN_UP,
+	SELL,
 } from 'navigation/constants';
 
 function RouterConfig() {
@@ -35,13 +21,10 @@ function RouterConfig() {
 			<Route exact path={HOME} element={<Home />} />
 			<Route path={BUY} element={<Buy />} />
 			<Route path={RENT} element={<Rent />} />
+			<Route path={SELL} element={<Sell />} />
 			<Route path={CONTACT} element={<Contact />} />
-			<Route path={NAIROBI} element={<Nairobi />} />
-			<Route path={MOMBASA} element={<Mombasa />} />
-			<Route path={KISUMU} element={<Kisumu />} />
-			<Route path={NAKURU} element={<Nakuru />} />
-			<Route path={NAIVASHA} element={<Naivasha />} />
-			<Route path={KILIFI} element={<Kilifi />} />
+			<Route path={SIGN_IN} element={<SignIn />} />
+			<Route path={SIGN_UP} element={<SignUp />} />
 
 			{/*************************PROTECTED ROUTES************************************** */}
 			{/* <Route element={<ProtectedRoutes redirectPath={LOGIN} />}>
