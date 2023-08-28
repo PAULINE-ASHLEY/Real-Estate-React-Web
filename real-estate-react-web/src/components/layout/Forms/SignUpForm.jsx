@@ -9,12 +9,25 @@ function SignUpForm() {
 		/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
 	const formik = useFormik({
 		initialValues: {
+			fullName: '',
 			email: '',
+			confirmEmail: '',
 			password: '',
+			confirmPassword: '',
 		},
 		validationSchema: Yup.object({
+			fullName: Yup.string()
+				.min(3, 'Must be 3 characters or less')
+				.required('Required'),
+			confirmEmail: Yup.string()
+				.email('Invalid email address')
+				.required('Required'),
 			email: Yup.string().email('Invalid email address').required('Required'),
 			password: Yup.string()
+				.min(8)
+				.required('Required')
+				.matches(strongPasswordRegex),
+			confirmPassword: Yup.string()
 				.min(8)
 				.required('Required')
 				.matches(strongPasswordRegex),
@@ -28,7 +41,7 @@ function SignUpForm() {
 			onSubmit={formik.handleSubmit}
 			className='sm:py-20 md:py-20 lg:px-20 lg:py-20 xl:px-20 xl:py-20 2xl:px-20 2xl:py-20'
 		>
-			<h1 className='text-5xl text-center font-semibold text-black pb-10'>
+			<h1 className='text-4xl text-center font-400 text-red pb-10'>
 				Create Your New Account
 			</h1>
 
@@ -51,7 +64,7 @@ function SignUpForm() {
 						target='_blank'
 						className='text-white flex justify-center items-center gap-x-2 p-2'
 					>
-						<img src={facebook} alt='LinkedIn Image' /> Continue with LinkedIn
+						<img src={facebook} alt='LinkedIn Image' /> Continue with Facebook
 					</a>
 				</div>
 
@@ -77,8 +90,13 @@ function SignUpForm() {
 
 			<div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1'>
 				<div className='px-10 mb-4'>
-					<label htmlFor='fullName' className='text-black text-xl'>
+					<label htmlFor='fullName' className='text-black text-xl flex'>
 						Full Name <b className='text-red text-xl'>*</b>
+						{formik.touched.fullName && formik.errors.fullName ? (
+							<div className='text-red text-xl ml-2'>
+								{formik.errors.fullName}
+							</div>
+						) : null}
 					</label>
 					<input
 						name='fullName'
@@ -87,16 +105,16 @@ function SignUpForm() {
 						placeholder='Enter your Full Name'
 						onChange={formik.handleChange}
 					/>
-					{formik.touched.fullName && formik.errors.fullName ? (
-						<div className='text-red text-xl'>{formik.errors.fullName}</div>
-					) : null}
 				</div>
 			</div>
 
 			<div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1'>
 				<div className='px-10 mb-4'>
-					<label htmlFor='email' className='text-black text-xl'>
+					<label htmlFor='email' className='text-black text-xl flex'>
 						Email Address <b className='text-red text-xl'>*</b>
+						{formik.touched.email && formik.errors.email ? (
+							<div className='text-red text-xl ml-2'>{formik.errors.email}</div>
+						) : null}
 					</label>
 					<input
 						name='email'
@@ -105,27 +123,26 @@ function SignUpForm() {
 						placeholder='Enter your Email Address'
 						onChange={formik.handleChange}
 					/>
-					{formik.touched.email && formik.errors.email ? (
-						<div className='text-red text-xl'>{formik.errors.email}</div>
-					) : null}
 				</div>
 			</div>
 
 			<div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1'>
 				<div className='px-10 mb-4'>
-					<label htmlFor='email' className='text-black text-xl'>
+					<label htmlFor='confirmEmail' className='text-black text-xl flex'>
 						Confirm Email Address <b className='text-red text-xl'>*</b>
+						{formik.touched.confirmEmail && formik.errors.confirmEmail ? (
+							<div className='text-red text-xl ml-2'>
+								{formik.errors.confirmEmail}
+							</div>
+						) : null}
 					</label>
 					<input
-						name='email'
+						name='confirmEmail'
 						type='email'
 						className='p-1.5 rounded-full border-black border-solid border-2 w-full'
 						placeholder='Enter your Email Address'
 						onChange={formik.handleChange}
 					/>
-					{formik.touched.email && formik.errors.email ? (
-						<div className='text-red text-xl'>{formik.errors.email}</div>
-					) : null}
 				</div>
 			</div>
 
@@ -149,8 +166,13 @@ function SignUpForm() {
 
 			<div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1'>
 				<div className='px-10 mb-4'>
-					<label htmlFor='password' className='text-black text-xl'>
+					<label htmlFor='password' className='text-black text-xl flex'>
 						Password <b className='text-red text-xl'>*</b>
+						{formik.touched.password && formik.errors.password ? (
+							<div className='text-red text-xl ml-2'>
+								{formik.errors.password}
+							</div>
+						) : null}
 					</label>
 					<input
 						name='password'
@@ -159,27 +181,26 @@ function SignUpForm() {
 						placeholder='Enter your Password'
 						onChange={formik.handleChange}
 					/>
-					{formik.touched.password && formik.errors.password ? (
-						<div className='text-red text-xl'>{formik.errors.password}</div>
-					) : null}
 				</div>
 			</div>
 
 			<div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1'>
 				<div className='px-10 mb-4'>
-					<label htmlFor='password' className='text-black text-xl'>
+					<label htmlFor='confirmPassword' className='text-black text-xl flex'>
 						Confirm Password <b className='text-red text-xl'>*</b>
+						{formik.touched.confirmPassword && formik.errors.confirmPassword ? (
+							<div className='text-red text-xl ml-2'>
+								{formik.errors.confirmPassword}
+							</div>
+						) : null}
 					</label>
 					<input
-						name='password'
+						name='confirmPassword'
 						type='text'
 						className='p-1.5 rounded-full border-black border-solid border-2 w-full'
 						placeholder='Enter your Password'
 						onChange={formik.handleChange}
 					/>
-					{formik.touched.password && formik.errors.password ? (
-						<div className='text-red text-xl'>{formik.errors.password}</div>
-					) : null}
 				</div>
 			</div>
 
@@ -195,6 +216,12 @@ function SignUpForm() {
 				</div>
 				<div></div>
 			</div>
+			<p className='text-center text-xl pt-4 font-400'>
+				Already have an Account ?{' '}
+				<Link to='/SignIn' className='text-red'>
+					Sign In
+				</Link>
+			</p>
 		</form>
 	);
 }

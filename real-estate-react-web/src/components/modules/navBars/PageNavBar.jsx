@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { logo } from 'assets/images';
+import { Link, NavLink } from 'react-router-dom';
+import { estate } from 'assets/images';
 // import { Button } from 'components/widgets/Buttons';
 // import NavBarLinks from './NavBarLinks';
 
 const NavBar = () => {
+	const activeStyle = { color: 'red' };
 	const [open, setOpen] = useState(false);
 	return (
 		<nav>
 			<div className='flex items-center font-semibold justify-around'>
 				<div className='z-50 md:w-auto w-full flex justify-between gap-2'>
-					<img src={logo} alt='logo' width={60} height={60} />
+					<img src={estate} alt='logo' width={60} height={60} />
 					<p className='pt-4 text-xl'>Real Paradise</p>
 					<div className='text-3xl md:hidden' onClick={() => setOpen(!open)}>
 						<ion-icon name={`${open ? 'close' : 'menu'}`}></ion-icon>
@@ -18,37 +19,57 @@ const NavBar = () => {
 				</div>
 				<ul className='md:flex hidden items-center gap-8 text-xl font-normal'>
 					<li>
-						<Link to='/' className='py-7 px-3 inline-block'>
+						<NavLink
+							activeStyle={activeStyle}
+							to='/'
+							className='py-7 px-3 inline-block'
+						>
 							Home
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link to='/Buy' className='py-7 px-3 inline-block'>
+						<NavLink
+							activeStyle={activeStyle}
+							to='/Buy'
+							className='py-7 px-3 inline-block'
+						>
 							Buy
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link to='/Rent' className='py-7 px-3 inline-block'>
+						<NavLink
+							activeStyle={activeStyle}
+							to='/Rent'
+							className='py-7 px-3 inline-block'
+						>
 							Rent
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link to='/Sell' className='py-7 px-3 inline-block'>
-							Sell
-						</Link>
+						<NavLink
+							activeStyle={activeStyle}
+							to='/Sell'
+							className='py-7 px-3 inline-block'
+						>
+							New Developments
+						</NavLink>
 					</li>
 					{/* <NavBarLinks /> */}
 					<li>
-						<Link to='/Contact' className='py-7 px-3 inline-block'>
+						<NavLink
+							activeStyle={activeStyle}
+							to='/Contact'
+							className='py-7 px-3 inline-block'
+						>
 							Contact
-						</Link>
+						</NavLink>
 					</li>
 				</ul>
 				<div className='flex justify-between gap-4'>
-					<button className='bg-white text-black rounded-full py-3 px-8 text-xl font-normal'>
+					<button className='bg-white text-black rounded-full py-3 px-8 text-xl font-semibold'>
 						<Link to='/SignIn'>Sign In</Link>
 					</button>
-					<button className='bg-white text-black rounded-full py-3 px-8 text-xl font-normal'>
+					<button className='bg-white text-black rounded-full py-3 px-8 text-xl font-semibold'>
 						<Link to='/SignUp'>Sign Up</Link>
 					</button>
 				</div>
@@ -60,30 +81,50 @@ const NavBar = () => {
         `}
 				>
 					<li>
-						<Link to='/' className='py-7 px-3 inline-block'>
+						<NavLink
+							activeStyle={activeStyle}
+							to='/'
+							className='py-7 px-3 inline-block'
+						>
 							Home
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link to='/Buy' className='py-7 px-3 inline-block'>
+						<NavLink
+							activeStyle={activeStyle}
+							to='/Buy'
+							className='py-7 px-3 inline-block'
+						>
 							Buy
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link to='/Rent' className='py-7 px-3 inline-block'>
+						<NavLink
+							activeStyle={activeStyle}
+							to='/Rent'
+							className='py-7 px-3 inline-block'
+						>
 							Rent
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<Link to='/Sell' className='py-7 px-3 inline-block'>
+						<NavLink
+							activeStyle={activeStyle}
+							to='/Sell'
+							className='py-7 px-3 inline-block'
+						>
 							Sell
-						</Link>
+						</NavLink>
 					</li>
 					{/* <NavBarLinks /> */}
 					<li>
-						<Link to='/Contact' className='py-7 px-3 inline-block'>
+						<NavLink
+							activeStyle={activeStyle}
+							to='/Contact'
+							className='py-7 px-3 inline-block'
+						>
 							Contact
-						</Link>
+						</NavLink>
 					</li>
 					<div className='py-5'>{/* <Button /> */} </div>
 				</ul>

@@ -28,7 +28,7 @@ function SignInForm() {
 			onSubmit={formik.handleSubmit}
 			className='sm:py-20 md:py-20 lg:px-20 lg:py-20 xl:px-20 xl:py-20 2xl:px-20 2xl:py-20'
 		>
-			<h1 className='text-5xl text-center font-semibold text-black pb-10'>
+			<h1 className='text-4xl text-center font-400 text-red pb-10'>
 				Log In to your Account
 			</h1>
 
@@ -77,8 +77,11 @@ function SignInForm() {
 
 			<div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1'>
 				<div className='px-10 mb-4'>
-					<label htmlFor='email' className='text-black text-xl'>
+					<label htmlFor='email' className='text-black text-xl flex'>
 						Email Address <b className='text-red text-xl'>*</b>
+						{formik.touched.email && formik.errors.email ? (
+							<div className='text-red text-xl ml-2'>{formik.errors.email}</div>
+						) : null}
 					</label>
 					<input
 						name='email'
@@ -87,16 +90,18 @@ function SignInForm() {
 						placeholder='Enter your Email Address'
 						onChange={formik.handleChange}
 					/>
-					{formik.touched.email && formik.errors.email ? (
-						<div className='text-red text-xl'>{formik.errors.email}</div>
-					) : null}
 				</div>
 			</div>
 
 			<div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1'>
 				<div className='px-10 mb-4'>
-					<label htmlFor='password' className='text-black text-xl'>
+					<label htmlFor='password' className='text-black text-xl flex'>
 						Password <b className='text-red text-xl'>*</b>
+						{formik.touched.password && formik.errors.password ? (
+							<div className='text-red text-xl ml-2'>
+								{formik.errors.password}
+							</div>
+						) : null}
 					</label>
 					<input
 						name='password'
@@ -105,9 +110,6 @@ function SignInForm() {
 						placeholder='Enter your Password'
 						onChange={formik.handleChange}
 					/>
-					{formik.touched.password && formik.errors.password ? (
-						<div className='text-red text-xl'>{formik.errors.password}</div>
-					) : null}
 				</div>
 			</div>
 
@@ -123,6 +125,12 @@ function SignInForm() {
 				</div>
 				<div></div>
 			</div>
+			<p className='text-center text-xl pt-4 font-400'>
+				Don&apos;t have an Account ?{' '}
+				<Link to='/SignUp' className='text-red'>
+					Sign Up
+				</Link>
+			</p>
 		</form>
 	);
 }

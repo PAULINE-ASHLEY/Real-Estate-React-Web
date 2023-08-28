@@ -1,5 +1,5 @@
 import React from 'react';
-import { logo } from 'assets/images';
+import { estate } from 'assets/images';
 import { Link } from 'react-router-dom';
 import {
 	FacebookButton,
@@ -18,7 +18,7 @@ function PageFooter() {
 			<div className='text-white grid grid-cols-3'>
 				<div>
 					<Link to='/' className='shrink-0 grow-0 rounded-full'>
-						<img src={logo} width={60} height={60} alt='restaurant logo' />
+						<img src={estate} alt='restaurant logo' />
 					</Link>
 					<p className='pt-6 text-xl font-medium'>Real Paradise</p>
 					<p className='pt-2 font-normal'>
