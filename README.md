@@ -8,7 +8,7 @@ This is a fully functional and responsive website that allows one to locate hous
 
 ## BUILT USING
 
-The website is using React.js and Tailwind. 
+The website is using React.js,Tailwind and JSON. 
 
 ## AUTHOR
 
