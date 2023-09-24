@@ -1,18 +1,19 @@
 import {
-	real,
-	real1,
-	real2,
-	real3,
-	real4,
-	real5,
-	real6,
-	real7,
-	real8,
+	sell,
+	sell1,
+	sell2,
+	sell3,
+	sell4,
+	sell5,
+	sell6,
+	sell7,
+	sell8,
+	sell9,
 } from 'assets/images';
 const SellData = [
 	{
 		id: 1,
-		image: real,
+		image: sell,
 		title: 'Runda Paradise Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -23,7 +24,7 @@ const SellData = [
 	},
 	{
 		id: 2,
-		image: real1,
+		image: sell1,
 		title: 'Kencom Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -34,7 +35,7 @@ const SellData = [
 	},
 	{
 		id: 3,
-		image: real2,
+		image: sell2,
 		title: 'Fourways Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -45,7 +46,7 @@ const SellData = [
 	},
 	{
 		id: 4,
-		image: real3,
+		image: sell3,
 		title: 'Runda Gardens Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -56,7 +57,7 @@ const SellData = [
 	},
 	{
 		id: 5,
-		image: real4,
+		image: sell4,
 		title: 'Ridgeways Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -67,7 +68,7 @@ const SellData = [
 	},
 	{
 		id: 6,
-		image: real5,
+		image: sell5,
 		title: 'Muthithi Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -78,7 +79,7 @@ const SellData = [
 	},
 	{
 		id: 7,
-		image: real,
+		image: sell6,
 		title: 'Kitusuru Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -89,7 +90,7 @@ const SellData = [
 	},
 	{
 		id: 8,
-		image: real7,
+		image: sell7,
 		title: 'Lavington Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -100,7 +101,7 @@ const SellData = [
 	},
 	{
 		id: 9,
-		image: real6,
+		image: sell8,
 		title: 'Westlands Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -111,7 +112,7 @@ const SellData = [
 	},
 	{
 		id: 10,
-		image: real8,
+		image: sell9,
 		title: 'Karen Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',

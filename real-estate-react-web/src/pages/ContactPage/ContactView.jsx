@@ -29,22 +29,22 @@ function ContactView() {
 							Want to talk to us anytime ?
 						</h2>
 						<div className='flex gap-x-2 items-center'>
-							<img src={people} alt='Real Estate Logo' width={60} />
+							<img src={people} alt='Real Estate Logo' width={30} />
 							<p className='text-2xl text-white'>
 								{' '}
 								- Opening Hours (8:00 AM - 5:00 PM) , Monday to Friday
 							</p>
 						</div>
 						<div className='flex gap-x-2 items-center'>
-							<img src={people2} alt='Real Estate Logo' width={60} />
+							<img src={people2} alt='Real Estate Logo' width={30} />
 							<p className='text-2xl text-white'> - 0743224567</p>
 						</div>
 						<div className='flex gap-x-2 items-center'>
-							<img src={people4} alt='Real Estate Logo' width={60} />
+							<img src={people4} alt='Real Estate Logo' width={30} />
 							<p className='text-2xl text-white'> - info@realparadise.com</p>
 						</div>
 						<div className='flex gap-x-2 items-center'>
-							<img src={people5} alt='Real Estate Logo' width={60} />
+							<img src={people5} alt='Real Estate Logo' width={30} />
 							<p className='text-2xl text-white'>
 								{' '}
 								- 5040 Real Paradise, Kenya

@@ -3,17 +3,6 @@ import { React } from 'react';
 import { Link } from 'react-router-dom';
 
 const Buy = () => {
-	// const [buyHouses, setbuyHouses] = useState([]);
-
-	// useEffect(() => {
-	// 	const fetchHouses = async () => {
-	// 		const rsp = await fetch(BuyData);
-	// 		const buy = await rsp.json();
-	// 		setbuyHouses(buy);
-	// 	};
-	// 	fetchHouses();
-	// }, []);
-
 	const currentPage = 1;
 	const postsPerPage = 10;
 
@@ -46,7 +35,7 @@ const Buy = () => {
 						<div className='flex justify-between'>
 							<div>
 								<button className='px-4 py-2 text-lg bg-black rounded-full text-white mt-4'>
-									<Link to={`/Detail/${buy.title}`}>View Details</Link>
+									<Link to={`/buy-detail/${buy.title}`}>View Details</Link>
 								</button>
 							</div>
 						</div>

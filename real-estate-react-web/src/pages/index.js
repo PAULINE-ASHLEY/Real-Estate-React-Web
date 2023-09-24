@@ -5,4 +5,6 @@ export { default as Contact } from './ContactPage';
 export { default as Sell } from './SellPage';
 export { default as SignUp } from './SignUpPage';
 export { default as SignIn } from './SignInPage';
-export { default as Detail } from './DetailPage';
+export { default as RentDetail } from './RentDetailPage';
+export { default as SellDetail } from './SellDetailPage';
+export { default as BuyDetail } from './BuyDetailPage';

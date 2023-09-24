@@ -1,7 +1,7 @@
 import React from 'react';
 import { PageWrapper } from 'components/modules/wrapper';
-import { Detail } from 'components/layout/Detail';
-function DetailView() {
+import { RentDetail } from 'components/layout/Detail';
+function RentDetailView() {
 	return (
 		<PageWrapper>
 			<div>
@@ -10,10 +10,10 @@ function DetailView() {
 				</h2>
 			</div>
 			<div className='px-20 pb-10'>
-				<Detail />
+				<RentDetail />
 			</div>
 		</PageWrapper>
 	);
 }
 
-export default DetailView;
+export default RentDetailView;
