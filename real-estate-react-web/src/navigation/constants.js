@@ -5,4 +5,6 @@ export const SELL = '/Sell';
 export const CONTACT = '/Contact';
 export const SIGN_IN = '/SignIn';
 export const SIGN_UP = '/SignUp';
-export const DETAIL = '/Detail/:title';
+export const BUY_DETAIL = '/buy-detail/:title';
+export const SELL_DETAIL = '/sell-detail/:title';
+export const RENT_DETAIL = '/rent-Detail/:title';

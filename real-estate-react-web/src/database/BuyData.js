@@ -1,18 +1,19 @@
 import {
-	real,
-	real1,
-	real2,
-	real3,
-	real4,
-	real5,
-	real6,
-	real7,
-	real8,
+	buy,
+	buy1,
+	buy2,
+	buy3,
+	buy4,
+	buy5,
+	buy6,
+	buy7,
+	buy8,
+	buy9,
 } from 'assets/images';
 const BuyData = [
 	{
 		id: 1,
-		image: real,
+		image: buy,
 		title: 'Runda Paradise Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -23,7 +24,7 @@ const BuyData = [
 	},
 	{
 		id: 2,
-		image: real1,
+		image: buy1,
 		title: 'Kencom Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -34,7 +35,7 @@ const BuyData = [
 	},
 	{
 		id: 3,
-		image: real2,
+		image: buy2,
 		title: 'Fourways Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -45,7 +46,7 @@ const BuyData = [
 	},
 	{
 		id: 4,
-		image: real3,
+		image: buy3,
 		title: 'Runda Gardens Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -56,7 +57,7 @@ const BuyData = [
 	},
 	{
 		id: 5,
-		image: real4,
+		image: buy4,
 		title: 'Ridgeways Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -67,7 +68,7 @@ const BuyData = [
 	},
 	{
 		id: 6,
-		image: real5,
+		image: buy5,
 		title: 'Muthithi Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -78,7 +79,7 @@ const BuyData = [
 	},
 	{
 		id: 7,
-		image: real,
+		image: buy6,
 		title: 'Kitusuru Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -89,7 +90,7 @@ const BuyData = [
 	},
 	{
 		id: 8,
-		image: real7,
+		image: buy7,
 		title: 'Lavington Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -100,7 +101,7 @@ const BuyData = [
 	},
 	{
 		id: 9,
-		image: real6,
+		image: buy8,
 		title: 'Westlands Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',
@@ -111,7 +112,7 @@ const BuyData = [
 	},
 	{
 		id: 10,
-		image: real8,
+		image: buy9,
 		title: 'Karen Estate',
 		price: 'Ksh.25 Million',
 		bed: '4',

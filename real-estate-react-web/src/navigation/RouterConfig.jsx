@@ -1,6 +1,17 @@
 import React from 'react';
 // import { ProtectedRoutes } from 'components/guards';
-import { Home, Buy, Rent, Contact, SignIn, SignUp, Sell, Detail } from 'pages';
+import {
+	Home,
+	Buy,
+	Rent,
+	Contact,
+	SignIn,
+	SignUp,
+	Sell,
+	BuyDetail,
+	SellDetail,
+	RentDetail,
+} from 'pages';
 import { Route, Routes } from 'react-router-dom';
 import {
 	HOME,
@@ -10,7 +21,9 @@ import {
 	SIGN_IN,
 	SIGN_UP,
 	SELL,
-	DETAIL,
+	BUY_DETAIL,
+	SELL_DETAIL,
+	RENT_DETAIL,
 } from 'navigation/constants';
 
 function RouterConfig() {
@@ -26,7 +39,9 @@ function RouterConfig() {
 			<Route path={CONTACT} element={<Contact />} />
 			<Route path={SIGN_IN} element={<SignIn />} />
 			<Route path={SIGN_UP} element={<SignUp />} />
-			<Route path={DETAIL} element={<Detail />} />
+			<Route path={SELL_DETAIL} element={<SellDetail />} />
+			<Route path={BUY_DETAIL} element={<BuyDetail />} />
+			<Route path={RENT_DETAIL} element={<RentDetail />} />
 
 			{/*************************PROTECTED ROUTES************************************** */}
 			{/* <Route element={<ProtectedRoutes redirectPath={LOGIN} />}>
