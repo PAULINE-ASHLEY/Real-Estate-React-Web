@@ -4,7 +4,7 @@ import RentData from 'database/RentData';
 
 const Rent = () => {
 	const currentPage = 1;
-	const postsPerPage = 3;
+	const postsPerPage = 4;
 
 	// Get current posts
 	const indexOfLastPost = currentPage * postsPerPage;
@@ -34,7 +34,7 @@ const Rent = () => {
 						</div>
 						<div className='flex justify-between'>
 							<div>
-								<button className='px-4 py-2 text-lg bg-black rounded-full text-white mt-4'>
+								<button className='px-4 py-2 text-lg bg-black rounded-full text-white mt-4 font-semibold'>
 									<Link to={`/rent-detail/${rent.title}`}>View Details</Link>
 								</button>
 							</div>

@@ -36,7 +36,7 @@ const RentDetail = () => {
 					<div className='px-4'>
 						<img src={desc.image} alt={desc.title} className='w-full rounded' />
 						<h1 className='text-3xl font-500 text-red pt-10'>
-							For more information, fill out the form
+							Send Agent a message
 						</h1>
 						<form
 							onSubmit={formik.handleSubmit}
@@ -58,7 +58,7 @@ const RentDetail = () => {
 									<input
 										name='firstName'
 										type='text'
-										className='p-1.5 rounded border-black border-solid border-2 w-full'
+										className='p-1.5 rounded-full border-black border-solid border-2 w-full'
 										placeholder='Enter your First Name'
 										onChange={formik.handleChange}
 									/>
@@ -78,7 +78,7 @@ const RentDetail = () => {
 									<input
 										name='email'
 										type='email'
-										className='p-1.5 rounded border-black border-solid border-2 w-full'
+										className='p-1.5 rounded-full border-black border-solid border-2 w-full'
 										placeholder='Enter your Email Address'
 										onChange={formik.handleChange}
 									/>
@@ -101,7 +101,7 @@ const RentDetail = () => {
 									<input
 										name='phoneNumber'
 										type='tel'
-										className='p-1.5 rounded border-black border-solid border-2 w-full'
+										className='p-1.5 rounded-full border-black border-solid border-2 w-full'
 										placeholder='Enter your Phone Number'
 										onChange={formik.handleChange}
 									/>
@@ -112,7 +112,7 @@ const RentDetail = () => {
 								<div>
 									<button
 										type='submit'
-										className='px-4 py-4 text-xl bg-white text-black rounded-full'
+										className='px-10 py-4 text-xl bg-white text-black rounded-full'
 									>
 										Submit
 									</button>

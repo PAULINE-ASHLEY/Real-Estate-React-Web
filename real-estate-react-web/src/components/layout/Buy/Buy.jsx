@@ -34,7 +34,7 @@ const Buy = () => {
 						</div>
 						<div className='flex justify-between'>
 							<div>
-								<button className='px-4 py-2 text-lg bg-black rounded-full text-white mt-4'>
+								<button className='px-4 py-2 text-lg bg-black rounded-full text-white mt-4 font-semibold'>
 									<Link to={`/buy-detail/${buy.title}`}>View Details</Link>
 								</button>
 							</div>
