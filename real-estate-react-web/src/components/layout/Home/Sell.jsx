@@ -4,7 +4,7 @@ import SellData from 'database/SellData';
 
 const Sell = () => {
 	const currentPage = 1;
-	const postsPerPage = 4;
+	const postsPerPage = 6;
 
 	// Get current posts
 	const indexOfLastPost = currentPage * postsPerPage;
@@ -34,7 +34,7 @@ const Sell = () => {
 						</div>
 						<div className='flex justify-between'>
 							<div>
-								<button className='px-4 py-2 text-lg bg-black rounded-full text-white mt-4'>
+								<button className='px-4 py-2 text-lg bg-black rounded-full text-white mt-4 font-semibold'>
 									<Link to={`/sell-detail/${sell.title}`}>View Details</Link>
 								</button>
 							</div>

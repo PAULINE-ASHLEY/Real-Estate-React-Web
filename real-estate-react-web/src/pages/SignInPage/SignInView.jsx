@@ -1,5 +1,5 @@
 import React from 'react';
-import { estate, home } from 'assets/images';
+import { back, estate, home } from 'assets/images';
 import { SignInForm } from 'components/layout/Forms';
 import { Link } from 'react-router-dom';
 function SignInView() {
@@ -8,6 +8,7 @@ function SignInView() {
 			<div className='w-[50%] bg-black'>
 				<Link to='/'>
 					<div className='pt-8 px-6 flex gap-x-4 items-center'>
+						<img src={back} alt='Back Button' />
 						<img src={estate} alt='Real Estate Logo' />
 						<p className='text-white text-2xl font-semibold'>Real Paradise</p>
 					</div>
