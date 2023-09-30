@@ -64,6 +64,15 @@ const NavBar = () => {
 							Contact
 						</NavLink>
 					</li>
+					<li>
+						<NavLink
+							activeStyle={activeStyle}
+							to='/Account'
+							className='py-7 px-3 inline-block'
+						>
+							Account
+						</NavLink>
+					</li>
 				</ul>
 				<div className='flex justify-between gap-4'>
 					<button className='bg-white text-black rounded-full py-3 px-8 text-xl font-semibold'>

@@ -14,11 +14,11 @@ function PageFooter() {
 			<div className='text-white grid grid-cols-3'>
 				<div className='text-center text-white'>
 					<p className='font-semibold text-2xl mt-5 pb-6'>REAL PARADISE</p>
-					<p className='pb-2 text-lg'>Keystone Park, 95 Riverside Drive</p>
+					<p className='pb-2 text-lg'>5040 Real Paradise, Kenya</p>
 					<p className='pb-2 text-lg'>P.O Box 20227 - 00100</p>
 					<p className='pb-2 text-lg'>Nairobi Kenya</p>
-					<p className='pb-2 text-lg'>+254725111444</p>
-					<p className='pb-2 text-lg'>info@realestate.co.ke</p>
+					<p className='pb-2 text-lg'>+2547000000</p>
+					<p className='pb-2 text-lg'>info@realparadise.com</p>
 				</div>
 				<div className='text-center'>
 					<p className='font-semibold text-2xl mt-5 pb-6 text-white'>

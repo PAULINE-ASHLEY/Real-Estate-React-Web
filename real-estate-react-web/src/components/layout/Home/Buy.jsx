@@ -20,7 +20,7 @@ const Buy = () => {
 					</div>
 					<div className='pt-2'>
 						<h2 className='font-400 text-white text-2xl'>{buy.title}</h2>
-						<p className='pt-2 text-xl font-400'>{buy.price}</p>
+						<p className='pt-2 text-xl text-white font-400'>{buy.price}</p>
 						<div className='flex gap-x-6 items-center'>
 							<p className='text-white text-xl'>
 								<b>{buy.bed}</b> bed

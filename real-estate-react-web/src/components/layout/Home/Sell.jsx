@@ -4,7 +4,7 @@ import SellData from 'database/SellData';
 
 const Sell = () => {
 	const currentPage = 1;
-	const postsPerPage = 6;
+	const postsPerPage = 9;
 
 	// Get current posts
 	const indexOfLastPost = currentPage * postsPerPage;

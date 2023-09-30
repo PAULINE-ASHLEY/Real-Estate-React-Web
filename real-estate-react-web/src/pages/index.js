@@ -8,3 +8,4 @@ export { default as SignIn } from './SignInPage';
 export { default as RentDetail } from './RentDetailPage';
 export { default as SellDetail } from './SellDetailPage';
 export { default as BuyDetail } from './BuyDetailPage';
+export { default as PopularDetail } from './PopularDetailPage';

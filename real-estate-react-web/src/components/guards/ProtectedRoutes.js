@@ -1,8 +1,9 @@
-import { LOGIN } from 'navigation/constants';
+// import { LOGIN } from 'navigation/constants';
 import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Navigate, Outlet } from 'react-router-dom';
+import { SIGN_UP } from 'navigation/constants';
 
 const useAuth = () => {
 	const user = localStorage.getItem('user');
@@ -13,7 +14,7 @@ const useAuth = () => {
 	}
 };
 
-const ProtectedRoutes = ({ redirectPath = LOGIN, children }) => {
+const ProtectedRoutes = ({ redirectPath = SIGN_UP, children }) => {
 	const auth = useAuth();
 
 	if (!auth) {

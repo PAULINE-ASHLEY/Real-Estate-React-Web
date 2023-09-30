@@ -1,11 +1,11 @@
-import RentData from 'database/RentData';
+import PopularData from 'database/PopularData';
 import { React } from 'react';
 import { useParams } from 'react-router-dom';
 import { tick } from 'assets/images';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
-const RentDetail = () => {
+const PopularDetail = () => {
 	const { title } = useParams();
 	const phoneRegExp =
 		/^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
@@ -31,7 +31,7 @@ const RentDetail = () => {
 	});
 	return (
 		<>
-			{RentData.filter((desc) => desc.title === title).map((desc, id) => (
+			{PopularData.filter((desc) => desc.title === title).map((desc, id) => (
 				<div key={id} className='grid grid-cols-2 gap-x-6 pt-8 text-justify'>
 					<div className='px-4'>
 						<img src={desc.image} alt={desc.title} className='w-full rounded' />
@@ -59,7 +59,7 @@ const RentDetail = () => {
 						</h1>
 						<form
 							onSubmit={formik.handleSubmit}
-							className='bg-black mt-6 rounded px-10 py-10'
+							className='bg-black rounded px-10 py-10 mt-6'
 						>
 							<div className='flex flex-row gap-x-4 pb-10'>
 								<h1 className='text-2xl font-500 text-white'>
@@ -69,7 +69,6 @@ const RentDetail = () => {
 									Price: {desc.price}
 								</h1>
 							</div>
-
 							<div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1'>
 								<div className='mb-4'>
 									<label
@@ -260,4 +259,4 @@ const RentDetail = () => {
 	);
 };
 
-export default RentDetail;
+export default PopularDetail;
