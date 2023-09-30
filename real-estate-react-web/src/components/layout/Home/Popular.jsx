@@ -1,41 +1,41 @@
 import { React } from 'react';
 import { Link } from 'react-router-dom';
-import RentData from 'database/RentData';
+import PopularData from 'database/PopularData';
 
-const Rent = () => {
+const Popular = () => {
 	const currentPage = 1;
 	const postsPerPage = 8;
 
 	// Get current posts
 	const indexOfLastPost = currentPage * postsPerPage;
 	const indexOfFirstPost = indexOfLastPost - postsPerPage;
-	const currentPosts = RentData.slice(indexOfFirstPost, indexOfLastPost);
+	const currentPosts = PopularData.slice(indexOfFirstPost, indexOfLastPost);
 
 	return (
 		<>
-			{currentPosts.map((rent, id) => (
+			{currentPosts.map((sell, id) => (
 				<div key={id} className='pt-8 text-justify'>
 					<div>
-						<img src={rent.image} alt={rent.title} className='w-full rounded' />
+						<img src={sell.image} alt={sell.title} className='w-full rounded' />
 					</div>
 					<div className='pt-2'>
-						<h2 className='font-400 text-red text-2xl'>{rent.title}</h2>
-						<p className='pt-2 text-black text-xl'>{rent.price}</p>
+						<h2 className='font-400 text-red text-2xl'>{sell.title}</h2>
+						<p className='pt-2 text-black text-xl'>{sell.price}</p>
 						<div className='flex gap-x-6 items-center'>
 							<p className='text-black text-xl'>
-								<b>{rent.bed}</b> bed
+								<b>{sell.bed}</b> bed
 							</p>
 							<p className='text-black text-xl'>
-								<b>{rent.bath}</b> bath
+								<b>{sell.bath}</b> bath
 							</p>
 							<p className='text-black text-xl'>
-								<b>{rent.sqf}</b> sqft
+								<b>{sell.sqf}</b> sqft
 							</p>
 						</div>
 						<div className='flex justify-between'>
 							<div>
 								<button className='px-4 py-2 text-lg bg-black rounded-full text-white mt-4 font-semibold'>
-									<Link to={`/rent-detail/${rent.title}`}>View Details</Link>
+									<Link to={`/popular-detail/${sell.title}`}>View Details</Link>
 								</button>
 							</div>
 						</div>
@@ -46,4 +46,4 @@ const Rent = () => {
 	);
 };
 
-export default Rent;
+export default Popular;

@@ -35,13 +35,40 @@ const BuyDetail = () => {
 				<div key={id} className='grid grid-cols-2 gap-x-6 pt-8 text-justify'>
 					<div className='px-4'>
 						<img src={desc.image} alt={desc.title} className='w-full rounded' />
-						<h1 className='text-3xl font-500 text-red pt-10'>
-							Send Agent a message
+						{/* Agent Details */}
+						<h1 className='text-2xl font-semibold text-red mt-10'>
+							Agent Information
+						</h1>
+						<div className='flex flex-row mt-4 items-center gap-x-10 border-2 border-solid border-black px-10 py-10 rounded'>
+							<img
+								src={desc.AgentImage}
+								alt={desc.AgentName}
+								width={100}
+								className='rounded-full'
+							/>
+							<div className='text-black text-2xl font-semibold'>
+								<p>Name : {desc.AgentName}</p>
+								<p>Contact: {desc.AgentNumber}</p>
+								<p>Email Address: {desc.AgentEmail}</p>
+							</div>
+						</div>
+						<h1 className='text-2xl font-500 text-black pt-10'>
+							Send Agent a message to inquire about{' '}
+							<b className='text-red'>{desc.title}</b> that costs{' '}
+							<b className='text-red'>{desc.price}</b>
 						</h1>
 						<form
 							onSubmit={formik.handleSubmit}
-							className='bg-black mt-6 rounded px-10 py-10'
+							className='bg-black rounded px-10 py-10 mt-6'
 						>
+							<div className='flex flex-row gap-x-4 pb-10'>
+								<h1 className='text-2xl font-500 text-white'>
+									Name: {desc.title}
+								</h1>
+								<h1 className='text-2xl font-500 text-white'>
+									Price: {desc.price}
+								</h1>
+							</div>
 							<div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1'>
 								<div className='mb-4'>
 									<label
@@ -149,79 +176,79 @@ const BuyDetail = () => {
 							<div>
 								<p className='flex flex-row gap-x-4 pb-4'>
 									<img src={tick} alt='' />
-									Backup Generator
+									{desc.Amenities1}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
 									<img src={tick} alt='' />
-									Kids Playing Area
+									{desc.Amenities2}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
 									<img src={tick} alt='' />
-									24 Hours Security
+									{desc.Amenities3}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
 									<img src={tick} alt='' />
-									Fully Equipped Gym
+									{desc.Amenities4}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
 									<img src={tick} alt='' />
-									Borehole
+									{desc.Amenities5}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
 									<img src={tick} alt='' />
-									CCTV
-								</p>
-							</div>
-							<div>
-								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
-									24 Hours Security
-								</p>
-								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
-									Gated Community
-								</p>
-								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
-									Secured Gates
-								</p>
-								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
-									Video Intercom
-								</p>
-								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
-									Internet Ready
-								</p>
-								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
-									Indoor Games Room
+									{desc.Amenities6}
 								</p>
 							</div>
 							<div>
 								<p className='flex flex-row gap-x-4 pb-4'>
 									<img src={tick} alt='' />
-									Electric Fence
+									{desc.Amenities7}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
 									<img src={tick} alt='' />
-									Elevator
+									{desc.Amenities8}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
 									<img src={tick} alt='' />
-									BBQ Area
+									{desc.Amenities9}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
 									<img src={tick} alt='' />
-									Heated Swimming Pool
+									{desc.Amenities10}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
 									<img src={tick} alt='' />
-									Cable TV Ready
+									{desc.Amenities11}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
 									<img src={tick} alt='' />
-									Controlled Parking
+									{desc.Amenities12}
+								</p>
+							</div>
+							<div>
+								<p className='flex flex-row gap-x-4 pb-4'>
+									<img src={tick} alt='' />
+									{desc.Amenities13}
+								</p>
+								<p className='flex flex-row gap-x-4 pb-4'>
+									<img src={tick} alt='' />
+									{desc.Amenities14}
+								</p>
+								<p className='flex flex-row gap-x-4 pb-4'>
+									<img src={tick} alt='' />
+									{desc.Amenities15}
+								</p>
+								<p className='flex flex-row gap-x-4 pb-4'>
+									<img src={tick} alt='' />
+									{desc.Amenities16}
+								</p>
+								<p className='flex flex-row gap-x-4 pb-4'>
+									<img src={tick} alt='' />
+									{desc.Amenities17}
+								</p>
+								<p className='flex flex-row gap-x-4 pb-4'>
+									<img src={tick} alt='' />
+									{desc.Amenities18}
 								</p>
 							</div>
 						</div>

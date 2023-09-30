@@ -1,6 +1,6 @@
 import React from 'react';
 import { ContactUsForm } from 'components/layout/Forms';
-import { people, estate, people2, people4, people5, back } from 'assets/images';
+import { people, people2, people4, people5, back } from 'assets/images';
 import { Link } from 'react-router-dom';
 import {
 	FacebookButton,
@@ -18,8 +18,7 @@ function ContactView() {
 					<Link to='/'>
 						<div className='pt-8 px-6 flex gap-x-4 items-center'>
 							<img src={back} alt='Back Button' />
-							<img src={estate} alt='Real Estate Logo' />
-							<p className='text-white text-2xl font-semibold'>Real Paradise</p>
+							<p className='text-white text-2xl font-semibold'>Back</p>
 						</div>
 					</Link>
 					<div className='mt-20 px-20'>
@@ -35,7 +34,7 @@ function ContactView() {
 						</div>
 						<div className='flex gap-x-2 items-center'>
 							<img src={people2} alt='Real Estate Logo' width={30} />
-							<p className='text-2xl text-white'> - 0743224567</p>
+							<p className='text-2xl text-white'> - +2547000000</p>
 						</div>
 						<div className='flex gap-x-2 items-center'>
 							<img src={people4} alt='Real Estate Logo' width={30} />
