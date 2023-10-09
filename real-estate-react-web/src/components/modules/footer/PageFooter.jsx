@@ -61,7 +61,7 @@ function PageFooter() {
 						REAL PARADISE
 					</p>
 					<p className='text-white font-normal pb-6 text-2xl text-center'>
-						© Copyright 2023 REAL PARADISE All rights reserved.
+						{`© Copyright ${new Date().getFullYear()} Pauline Ondiek All rights reserved.`}
 					</p>
 				</div>
 			</div>
