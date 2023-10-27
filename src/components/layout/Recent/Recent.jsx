@@ -14,21 +14,21 @@ const Recent = () => {
 	return (
 		<>
 			{currentPosts.map((recent, id) => (
-				<div key={id} className='pt-8 flex flex-row gap-x-4 items-center'>
+				<div key={id} className='pt-4 flex flex-row gap-x-4 items-center'>
 					<div>
 						<img
 							src={recent.image}
 							alt={recent.title}
 							className='rounded'
-							width={280}
+							width={180}
 						/>
 					</div>
 					<div className='pt-2 items-center'>
-						<h2 className='font-400 text-red text-xl'>{recent.title}</h2>
-						<p className='pt-2 text-xl font-400'>{recent.price}</p>
+						<h2 className='font-400 text-red text-lg'>{recent.title}</h2>
+						<p className='pt-2 text-lg font-400'>{recent.price}</p>
 						<div className='flex justify-between'>
 							<div>
-								<button className='px-4 py-2 text-lg bg-black rounded-full text-white mt-4 font-semibold'>
+								<button className='px-4 h-10 text-sm bg-black rounded-full text-white mt-2 font-semibold'>
 									<Link to={`/popular-detail/${recent.title}`}>
 										View Details
 									</Link>
