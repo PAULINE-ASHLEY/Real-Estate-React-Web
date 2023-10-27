@@ -8,7 +8,7 @@ function BuyView() {
 			<div className='flex'>
 				<div className='w-[70%]'>
 					<div>
-						<h2 className='font-bold text-black text-2xl pt-10 px-10'>
+						<h2 className='font-bold text-black text-xl pt-10 px-10'>
 							Looking for a house to buy ?
 						</h2>
 					</div>
@@ -18,7 +18,7 @@ function BuyView() {
 				</div>
 				<div className='w-[30%]'>
 					<div>
-						<h2 className='font-bold text-black text-2xl pt-10'>
+						<h2 className='font-bold text-black text-xl pt-10'>
 							Most Viewed Houses
 						</h2>
 					</div>

@@ -13,18 +13,16 @@ function PageFooter() {
 		<>
 			<div className='text-white grid grid-cols-3'>
 				<div className='text-center text-white'>
-					<p className='font-semibold text-2xl mt-5 pb-6'>REAL PARADISE</p>
-					<p className='pb-2 text-lg'>5040 Real Paradise, Kenya</p>
-					<p className='pb-2 text-lg'>P.O Box 20227 - 00100</p>
-					<p className='pb-2 text-lg'>Nairobi Kenya</p>
-					<p className='pb-2 text-lg'>+2547000000</p>
-					<p className='pb-2 text-lg'>info@realparadise.com</p>
+					<p className='font-semibold text-xl mt-5 pb-6'>REAL PARADISE</p>
+					<p className='pb-2 text-base'>5040 Real Paradise, Kenya</p>
+					<p className='pb-2 text-base'>P.O Box 20227 - 00100</p>
+					<p className='pb-2 text-base'>Nairobi Kenya</p>
+					<p className='pb-2 text-base'>+2547000000</p>
+					<p className='pb-2 text-base'>info@realparadise.com</p>
 				</div>
 				<div className='text-center'>
-					<p className='font-semibold text-2xl mt-5 pb-6 text-white'>
-						NAVIGATE
-					</p>
-					<div className='text-lg'>
+					<p className='font-semibold text-xl mt-5 pb-6 text-white'>NAVIGATE</p>
+					<div className='text-base'>
 						<Link to='/'>Home</Link> <br />
 						<Link to='/'>News</Link> <br />
 						<Link to='/'>Careers</Link> <br />
@@ -34,10 +32,10 @@ function PageFooter() {
 				</div>
 				<div>
 					<div className='text-center'>
-						<p className='font-semibold text-2xl mt-5 pb-6 text-white'>
+						<p className='font-semibold text-xl mt-5 pb-6 text-white'>
 							EXPLORE
 						</p>
-						<div className='text-lg'>
+						<div className='text-base'>
 							<Link to='/Buy'>Buy</Link> <br />
 							<Link to='/Rent'>Rent</Link> <br />
 							<Link to='/'>Developments</Link> <br />
@@ -57,10 +55,10 @@ function PageFooter() {
 						<TwitterButton />
 						<YoutubeButton />
 					</div>
-					<p className='font-semibold text-2xl mt-5 pb-6 text-white text-center'>
+					<p className='font-semibold text-lg mt-5 pb-6 text-white text-center'>
 						REAL PARADISE
 					</p>
-					<p className='text-white font-normal pb-6 text-2xl text-center'>
+					<p className='text-white font-normal pb-6 text-base text-center'>
 						{`© Copyright ${new Date().getFullYear()} Pauline Ondiek All rights reserved.`}
 					</p>
 				</div>

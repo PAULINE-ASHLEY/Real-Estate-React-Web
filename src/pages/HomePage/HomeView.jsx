@@ -21,8 +21,8 @@ function HomeView() {
 				<div className='flex'>
 					<div className='w-[50%]'>
 						<div className='flex items-center gap-x-10  pt-10 px-10'>
-							<h2 className='font-bold text-black text-2xl'>House To Rent</h2>
-							<Link to='/Rent' className='font-bold text-red text-xl'>
+							<h2 className='font-bold text-black text-xl'>House To Rent</h2>
+							<Link to='/Rent' className='font-bold text-red text-lg'>
 								View All &gt;
 							</Link>
 						</div>
@@ -32,7 +32,7 @@ function HomeView() {
 					</div>
 					<div className='w-[50%]'>
 						<div>
-							<h2 className='font-bold text-black text-2xl pt-10 px-10'>
+							<h2 className='font-bold text-black text-xl pt-10 px-10'>
 								Most Popular Houses
 							</h2>
 						</div>
@@ -44,8 +44,8 @@ function HomeView() {
 
 				<div className='bg-black px-10 py-4'>
 					<div className='flex items-center gap-x-10  pt-10 px-10'>
-						<h2 className='font-bold text-white text-2xl'>House to Buy</h2>
-						<Link to='/Buy' className='font-bold text-white text-xl'>
+						<h2 className='font-bold text-white text-xl'>House to Buy</h2>
+						<Link to='/Buy' className='font-bold text-white text-lg'>
 							View All &gt;
 						</Link>
 					</div>
@@ -57,10 +57,8 @@ function HomeView() {
 				<div className='flex'>
 					<div className='w-[70%]'>
 						<div className='flex items-center gap-x-10  pt-10 px-10'>
-							<h2 className='font-bold text-black text-2xl'>
-								New Developments
-							</h2>
-							<Link to='/Sell' className='font-bold text-red text-xl'>
+							<h2 className='font-bold text-black text-xl'>New Developments</h2>
+							<Link to='/Sell' className='font-bold text-red text-lg'>
 								View All &gt;
 							</Link>
 						</div>
@@ -70,7 +68,7 @@ function HomeView() {
 					</div>
 					<div className='w-[30%]'>
 						<div>
-							<h2 className='font-bold text-black text-2xl pt-10'>
+							<h2 className='font-bold text-black text-xl pt-10'>
 								Most Viewed Houses
 							</h2>
 						</div>

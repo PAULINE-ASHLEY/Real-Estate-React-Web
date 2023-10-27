@@ -21,7 +21,7 @@ function WelcomeSection() {
 				style={{ backgroundImage: `url(${background})` }}
 				className='bg-cover pt-100px pb-250px'
 			>
-				<div className='text-4xl text-center text-white font-bold'>
+				<div className='text-3xl text-center text-white font-bold'>
 					<p>
 						<b className='text-red'>Real Paradise </b>.Your Home.
 						<b className='text-black'>Our Commitment.</b>
@@ -34,12 +34,12 @@ function WelcomeSection() {
 							<input
 								name='Search'
 								type='text'
-								className='rounded-full border-white border-solid border-2 w-full py-4 px-4'
+								className='rounded-full border-white border-solid border-2 w-full p-2 text-sm'
 								placeholder='Search for a house to rent, buy or a new development'
 								onChange={formik.handleChange}
 							/>
 							{formik.touched.fullName && formik.errors.fullName ? (
-								<div className='text-red text-xl ml-2'>
+								<div className='text-red text-base ml-2'>
 									{formik.errors.fullName}
 								</div>
 							) : null}
@@ -47,7 +47,7 @@ function WelcomeSection() {
 						<div>
 							<button
 								type='submit'
-								className='px-4 py-4 text-xl bg-black text-white rounded-full font-semibold'
+								className='px-4 h-10 text-base bg-black text-white rounded-full font-semibold'
 							>
 								Search
 							</button>
