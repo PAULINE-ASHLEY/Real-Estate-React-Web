@@ -41,7 +41,7 @@ function SignUpForm() {
 			onSubmit={formik.handleSubmit}
 			className='sm:py-20 md:py-20 lg:px-20 lg:py-20 xl:px-20 xl:py-20 2xl:px-20 2xl:py-20'
 		>
-			<h1 className='text-4xl text-center font-400 text-red pb-10'>
+			<h1 className='text-3xl text-center font-400 text-red pb-10'>
 				Create Your New Account
 			</h1>
 
@@ -51,9 +51,10 @@ function SignUpForm() {
 						href='#'
 						rel='noreferrer'
 						target='_blank'
-						className='text-white flex justify-center items-center gap-x-2 p-2'
+						className='text-white flex justify-center items-center gap-x-2 p-2 text-sm'
 					>
-						<img src={google} /> Continue with Google
+						<img src={google} width={20} alt='Google Image' /> Continue with
+						Google
 					</a>
 				</div>
 
@@ -62,9 +63,10 @@ function SignUpForm() {
 						href='#'
 						rel='noreferrer'
 						target='_blank'
-						className='text-white flex justify-center items-center gap-x-2 p-2'
+						className='text-white flex justify-center items-center gap-x-2 p-2 text-sm'
 					>
-						<img src={facebook} alt='LinkedIn Image' /> Continue with Facebook
+						<img src={facebook} width={20} alt='LinkedIn Image' /> Continue with
+						Facebook
 					</a>
 				</div>
 
@@ -73,15 +75,19 @@ function SignUpForm() {
 						href='#'
 						rel='noreferrer'
 						target='_blank'
-						className='text-white flex justify-center items-center gap-x-2'
+						className='text-white flex justify-center items-center gap-x-2 text-sm'
 					>
-						<img src={linkedin} alt='LinkedIn Image' /> Continue with LinkedIn
+						<img src={linkedin} width={20} alt='LinkedIn Image' /> Continue with
+						LinkedIn
 					</a>
 				</div>
 
 				<div className='text-center flex justify-between items-center py-8'>
 					<div className='border-b border-black w-[80%] text-black'></div>{' '}
-					<Link to='#' className='px-2 text-center text-black w-[20%] text-xl'>
+					<Link
+						to='#'
+						className='px-2 text-center text-black w-[20%] text-base'
+					>
 						Or continue with
 					</Link>
 					<div className='border-b border-black w-[80%] text-black'></div>
@@ -90,10 +96,10 @@ function SignUpForm() {
 
 			<div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1'>
 				<div className='px-10 mb-4'>
-					<label htmlFor='fullName' className='text-black text-xl flex'>
-						Full Name <b className='text-red text-xl'>*</b>
+					<label htmlFor='fullName' className='text-black text-base flex'>
+						Full Name <b className='text-red text-base'>*</b>
 						{formik.touched.fullName && formik.errors.fullName ? (
-							<div className='text-red text-xl ml-2'>
+							<div className='text-red text-base ml-2'>
 								{formik.errors.fullName}
 							</div>
 						) : null}
@@ -101,7 +107,7 @@ function SignUpForm() {
 					<input
 						name='fullName'
 						type='text'
-						className='p-1.5 rounded-full border-black border-solid border-2 w-full'
+						className='p-1 rounded-full border-black border-solid border-2 w-full text-sm'
 						placeholder='Enter your Full Name'
 						onChange={formik.handleChange}
 					/>
@@ -110,16 +116,18 @@ function SignUpForm() {
 
 			<div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1'>
 				<div className='px-10 mb-4'>
-					<label htmlFor='email' className='text-black text-xl flex'>
-						Email Address <b className='text-red text-xl'>*</b>
+					<label htmlFor='email' className='text-black text-base flex'>
+						Email Address <b className='text-red text-base'>*</b>
 						{formik.touched.email && formik.errors.email ? (
-							<div className='text-red text-xl ml-2'>{formik.errors.email}</div>
+							<div className='text-red text-base ml-2'>
+								{formik.errors.email}
+							</div>
 						) : null}
 					</label>
 					<input
 						name='email'
 						type='email'
-						className='p-1.5 rounded-full border-black border-solid border-2 w-full'
+						className='p-1 rounded-full border-black border-solid border-2 w-full text-sm'
 						placeholder='Enter your Email Address'
 						onChange={formik.handleChange}
 					/>
@@ -128,10 +136,10 @@ function SignUpForm() {
 
 			<div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1'>
 				<div className='px-10 mb-4'>
-					<label htmlFor='confirmEmail' className='text-black text-xl flex'>
-						Confirm Email Address <b className='text-red text-xl'>*</b>
+					<label htmlFor='confirmEmail' className='text-black text-base flex'>
+						Confirm Email Address <b className='text-red text-base'>*</b>
 						{formik.touched.confirmEmail && formik.errors.confirmEmail ? (
-							<div className='text-red text-xl ml-2'>
+							<div className='text-red text-base ml-2'>
 								{formik.errors.confirmEmail}
 							</div>
 						) : null}
@@ -139,7 +147,7 @@ function SignUpForm() {
 					<input
 						name='confirmEmail'
 						type='email'
-						className='p-1.5 rounded-full border-black border-solid border-2 w-full'
+						className='p-1 rounded-full border-black border-solid border-2 w-full text-sm'
 						placeholder='Enter your Email Address'
 						onChange={formik.handleChange}
 					/>
@@ -148,28 +156,30 @@ function SignUpForm() {
 
 			<div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1'>
 				<div className='px-10 mb-4'>
-					<label htmlFor='phoneNumber' className='text-black text-xl'>
+					<label htmlFor='phoneNumber' className='text-black text-base'>
 						Phone Number
 					</label>
 					<input
 						name='phoneNumber'
 						type='tel'
-						className='p-1.5 rounded-full border-black border-solid border-2 w-full'
+						className='p-1 rounded-full border-black border-solid border-2 w-full text-sm'
 						placeholder='Enter your Phone Number'
 						onChange={formik.handleChange}
 					/>
 					{formik.touched.phoneNumber && formik.errors.phoneNumber ? (
-						<div className='text-red text-xl'>{formik.errors.phoneNumber}</div>
+						<div className='text-red text-base'>
+							{formik.errors.phoneNumber}
+						</div>
 					) : null}
 				</div>
 			</div>
 
 			<div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1'>
 				<div className='px-10 mb-4'>
-					<label htmlFor='password' className='text-black text-xl flex'>
-						Password <b className='text-red text-xl'>*</b>
+					<label htmlFor='password' className='text-black text-base flex'>
+						Password <b className='text-red text-base'>*</b>
 						{formik.touched.password && formik.errors.password ? (
-							<div className='text-red text-xl ml-2'>
+							<div className='text-red text-base ml-2'>
 								{formik.errors.password}
 							</div>
 						) : null}
@@ -177,7 +187,7 @@ function SignUpForm() {
 					<input
 						name='password'
 						type='text'
-						className='p-1.5 rounded-full border-black border-solid border-2 w-full'
+						className='p-1 rounded-full border-black border-solid border-2 w-full text-sm'
 						placeholder='Enter your Password'
 						onChange={formik.handleChange}
 					/>
@@ -186,10 +196,13 @@ function SignUpForm() {
 
 			<div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1'>
 				<div className='px-10 mb-4'>
-					<label htmlFor='confirmPassword' className='text-black text-xl flex'>
-						Confirm Password <b className='text-red text-xl'>*</b>
+					<label
+						htmlFor='confirmPassword'
+						className='text-black text-base flex'
+					>
+						Confirm Password <b className='text-red text-base'>*</b>
 						{formik.touched.confirmPassword && formik.errors.confirmPassword ? (
-							<div className='text-red text-xl ml-2'>
+							<div className='text-red text-base ml-2'>
 								{formik.errors.confirmPassword}
 							</div>
 						) : null}
@@ -197,7 +210,7 @@ function SignUpForm() {
 					<input
 						name='confirmPassword'
 						type='text'
-						className='p-1.5 rounded-full border-black border-solid border-2 w-full'
+						className='p-1 rounded-full border-black border-solid border-2 w-full text-sm'
 						placeholder='Enter your Password'
 						onChange={formik.handleChange}
 					/>
@@ -209,14 +222,14 @@ function SignUpForm() {
 				<div className='flex justify-center'>
 					<button
 						type='submit'
-						className='px-10 py-4 text-xl bg-black text-white rounded-full'
+						className='px-10 h-10 text-sm bg-black text-white rounded-full'
 					>
 						Send
 					</button>
 				</div>
 				<div></div>
 			</div>
-			<p className='text-center text-xl pt-4 font-400'>
+			<p className='text-center text-base pt-4 font-400'>
 				Already have an Account ?{' '}
 				<Link to='/SignIn' className='text-red'>
 					Sign In

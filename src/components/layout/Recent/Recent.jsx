@@ -23,7 +23,7 @@ const Recent = () => {
 							width={180}
 						/>
 					</div>
-					<div className='pt-2 items-center'>
+					<div className='items-center'>
 						<h2 className='font-400 text-red text-lg'>{recent.title}</h2>
 						<p className='pt-2 text-lg font-400'>{recent.price}</p>
 						<div className='flex justify-between'>
