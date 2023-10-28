@@ -17,37 +17,34 @@ function ContactView() {
 				<div className='w-[50%] bg-black'>
 					<Link to='/'>
 						<div className='pt-8 px-6 flex gap-x-4 items-center'>
-							<img src={back} alt='Back Button' />
-							<p className='text-white text-2xl font-semibold'>Back</p>
+							<img src={back} alt='Back Button' width={30} />
+							<p className='text-white text-lg font-semibold'>Back</p>
 						</div>
 					</Link>
 					<div className='mt-20 px-20'>
-						<h2 className='font-400 text-white text-3xl pb-6'>
+						<h2 className='font-400 text-white text-2xl pb-6'>
 							Want to talk to us anytime ?
 						</h2>
 						<div className='flex gap-x-2 items-center'>
 							<img src={people} alt='Real Estate Logo' width={30} />
-							<p className='text-2xl text-white'>
+							<p className='text-lg text-white'>
 								{' '}
-								- Opening Hours (8:00 AM - 5:00 PM) , Monday to Friday
+								Opening Hours (8:00 AM - 5:00 PM) , Monday to Friday
 							</p>
 						</div>
 						<div className='flex gap-x-2 items-center'>
 							<img src={people2} alt='Real Estate Logo' width={30} />
-							<p className='text-2xl text-white'> - +2547000000</p>
+							<p className='text-lg text-white'> +2547000000</p>
 						</div>
 						<div className='flex gap-x-2 items-center'>
 							<img src={people4} alt='Real Estate Logo' width={30} />
-							<p className='text-2xl text-white'> - info@realparadise.com</p>
+							<p className='text-lg text-white'> info@realparadise.com</p>
 						</div>
 						<div className='flex gap-x-2 items-center'>
 							<img src={people5} alt='Real Estate Logo' width={30} />
-							<p className='text-2xl text-white'>
-								{' '}
-								- 5040 Real Paradise, Kenya
-							</p>
+							<p className='text-lg text-white'> 5040 Real Paradise, Kenya</p>
 						</div>
-						<h2 className='font-400 text-white text-2xl pt-10 pb-4'>
+						<h2 className='font-400 text-white text-lg pt-10 pb-4'>
 							Follow us on our Social Media Channels
 						</h2>
 						<div className='flex gap-x-4'>

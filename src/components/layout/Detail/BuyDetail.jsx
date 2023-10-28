@@ -36,23 +36,23 @@ const BuyDetail = () => {
 					<div className='px-4'>
 						<img src={desc.image} alt={desc.title} className='w-full rounded' />
 						{/* Agent Details */}
-						<h1 className='text-2xl font-semibold text-red mt-10'>
+						<h1 className='text-xl font-semibold text-red mt-10'>
 							Agent Information
 						</h1>
 						<div className='flex flex-row mt-4 items-center gap-x-10 border-2 border-solid border-black px-10 py-10 rounded'>
 							<img
 								src={desc.AgentImage}
 								alt={desc.AgentName}
-								width={100}
+								width={80}
 								className='rounded-full'
 							/>
-							<div className='text-black text-2xl font-semibold'>
+							<div className='text-black text-base font-semibold'>
 								<p>Name : {desc.AgentName}</p>
 								<p>Contact: {desc.AgentNumber}</p>
 								<p>Email Address: {desc.AgentEmail}</p>
 							</div>
 						</div>
-						<h1 className='text-2xl font-500 text-black pt-10'>
+						<h1 className='text-lg font-500 text-black pt-10'>
 							Send Agent a message to inquire about{' '}
 							<b className='text-red'>{desc.title}</b> that costs{' '}
 							<b className='text-red'>{desc.price}</b>
@@ -62,10 +62,10 @@ const BuyDetail = () => {
 							className='bg-black rounded px-10 py-10 mt-6'
 						>
 							<div className='flex flex-row gap-x-4 pb-10'>
-								<h1 className='text-2xl font-500 text-white'>
+								<h1 className='text-lg font-500 text-white'>
 									Name: {desc.title}
 								</h1>
-								<h1 className='text-2xl font-500 text-white'>
+								<h1 className='text-lg font-500 text-white'>
 									Price: {desc.price}
 								</h1>
 							</div>
@@ -73,11 +73,11 @@ const BuyDetail = () => {
 								<div className='mb-4'>
 									<label
 										htmlFor='firstName'
-										className='text-white text-xl flex'
+										className='text-white text-base flex'
 									>
-										Full Name <b className='text-red text-xl'>*</b>
+										Full Name <b className='text-red text-base'>*</b>
 										{formik.touched.fullName && formik.errors.fullName ? (
-											<div className='text-red text-xl ml-2'>
+											<div className='text-red text-base ml-2'>
 												{formik.errors.fullName}
 											</div>
 										) : null}
@@ -85,7 +85,7 @@ const BuyDetail = () => {
 									<input
 										name='firstName'
 										type='text'
-										className='p-1.5 rounded-full border-black border-solid border-2 w-full'
+										className='p-1 rounded-full border-black border-solid border-2 w-full text-sm'
 										placeholder='Enter your First Name'
 										onChange={formik.handleChange}
 									/>
@@ -94,10 +94,10 @@ const BuyDetail = () => {
 
 							<div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 2xl:grid-cols-1'>
 								<div className='mb-4'>
-									<label htmlFor='email' className='text-white text-xl flex'>
-										Email Address <b className='text-red text-xl'>*</b>
+									<label htmlFor='email' className='text-white text-base flex'>
+										Email Address <b className='text-red text-base'>*</b>
 										{formik.touched.email && formik.errors.email ? (
-											<div className='text-red text-xl ml-2'>
+											<div className='text-red text-base ml-2'>
 												{formik.errors.email}
 											</div>
 										) : null}
@@ -105,7 +105,7 @@ const BuyDetail = () => {
 									<input
 										name='email'
 										type='email'
-										className='p-1.5 rounded-full border-black border-solid border-2 w-full'
+										className='p-1 rounded-full border-black border-solid border-2 w-full text-sm'
 										placeholder='Enter your Email Address'
 										onChange={formik.handleChange}
 									/>
@@ -116,11 +116,11 @@ const BuyDetail = () => {
 								<div className='mb-4'>
 									<label
 										htmlFor='phoneNumber'
-										className='text-white text-xl flex'
+										className='text-white text-base flex'
 									>
-										Phone Number <b className='text-red text-xl'>*</b>
+										Phone Number <b className='text-red text-base'>*</b>
 										{formik.touched.phoneNumber && formik.errors.phoneNumber ? (
-											<div className='text-red text-xl ml-2'>
+											<div className='text-red text-base ml-2'>
 												{formik.errors.phoneNumber}
 											</div>
 										) : null}
@@ -128,7 +128,7 @@ const BuyDetail = () => {
 									<input
 										name='phoneNumber'
 										type='tel'
-										className='p-1.5 rounded-full border-black border-solid border-2 w-full'
+										className='p-1 rounded-full border-black border-solid border-2 w-full text-sm'
 										placeholder='Enter your Phone Number'
 										onChange={formik.handleChange}
 									/>
@@ -139,7 +139,7 @@ const BuyDetail = () => {
 								<div>
 									<button
 										type='submit'
-										className='px-10 py-4 text-xl bg-white text-black rounded-full'
+										className='px-10 h-10 text-sm bg-white text-black rounded-full'
 									>
 										Submit
 									</button>
@@ -148,106 +148,106 @@ const BuyDetail = () => {
 						</form>
 					</div>
 					<div>
-						<h2 className='font-semibold text-red text-3xl'>{desc.title}</h2>
-						<h2 className='font-semibold text-black text-2xl pt-4'>Price:</h2>
-						<p className='pt-2 text-xl font-400'>{desc.price}</p>
-						<h2 className='font-semibold text-black text-2xl pt-4'>
+						<h2 className='font-semibold text-red text-2xl'>{desc.title}</h2>
+						<h2 className='font-semibold text-black text-xl pt-4'>Price:</h2>
+						<p className='pt-2 text-base font-400'>{desc.price}</p>
+						<h2 className='font-semibold text-black text-xl pt-4'>
 							Description:
 						</h2>
-						<p className='py-4 text-xl'>{desc.description}</p>
-						<h2 className='font-semibold text-black text-2xl pb-4'>
+						<p className='py-4 text-base'>{desc.description}</p>
+						<h2 className='font-semibold text-black text-xl pb-4'>
 							Property Features:
 						</h2>
 						<div className='flex gap-x-6 items-center'>
-							<p className='text-black text-xl'>
+							<p className='text-black text-base'>
 								<b>{desc.bed}</b> bed
 							</p>
-							<p className='text-black text-xl'>
+							<p className='text-black text-base'>
 								<b>{desc.bath}</b> bath
 							</p>
-							<p className='text-black text-xl'>
+							<p className='text-black text-base'>
 								<b>{desc.sqf}</b> sqft
 							</p>
 						</div>
-						<h2 className='font-semibold text-black text-2xl py-4'>
+						<h2 className='font-semibold text-black text-xl py-4'>
 							Amenities:
 						</h2>
-						<div className='grid grid-cols-3 text-xl'>
+						<div className='grid grid-cols-3 text-sm'>
 							<div>
 								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities1}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities2}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities3}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities4}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities5}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities6}
 								</p>
 							</div>
 							<div>
 								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities7}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities8}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities9}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities10}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities11}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities12}
 								</p>
 							</div>
 							<div>
 								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities13}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities14}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities15}
 								</p>
-								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+								{/* <p className='flex flex-row gap-x-4 pb-4'>
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities16}
-								</p>
+								</p> */}
 								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities17}
 								</p>
 								<p className='flex flex-row gap-x-4 pb-4'>
-									<img src={tick} alt='' />
+									<img src={tick} width={20} alt='' />
 									{desc.Amenities18}
 								</p>
 							</div>

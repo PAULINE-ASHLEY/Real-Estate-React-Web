@@ -5,7 +5,7 @@ function BuyDetailView() {
 	return (
 		<PageWrapper>
 			<div>
-				<h2 className='font-semibold text-black text-3xl pt-10 px-20'>
+				<h2 className='font-semibold text-black text-2xl pt-10 px-20'>
 					House Details
 				</h2>
 			</div>
