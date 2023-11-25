@@ -11,7 +11,7 @@ import {
 function PageFooter() {
 	return (
 		<>
-			<div className='text-white grid grid-cols-3'>
+			<div className='text-white grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3'>
 				<div className='text-center text-white'>
 					<p className='font-semibold text-xl mt-5 pb-6'>REAL PARADISE</p>
 					<p className='pb-2 text-base'>5040 Real Paradise, Kenya</p>

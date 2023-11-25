@@ -24,10 +24,7 @@ function SignInForm() {
 		},
 	});
 	return (
-		<form
-			onSubmit={formik.handleSubmit}
-			className='sm:py-20 md:py-20 lg:px-20 lg:py-20 xl:px-20 xl:py-20 2xl:px-20 2xl:py-20'
-		>
+		<form onSubmit={formik.handleSubmit} className='lg:p-10 xl:p-10 2xl:p-10'>
 			<h1 className='text-3xl text-center font-400 text-red pb-10'>
 				Log In to your Account
 			</h1>
