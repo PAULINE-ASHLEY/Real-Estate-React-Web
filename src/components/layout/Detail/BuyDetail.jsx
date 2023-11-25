@@ -32,7 +32,10 @@ const BuyDetail = () => {
 	return (
 		<>
 			{BuyData.filter((desc) => desc.title === title).map((desc, id) => (
-				<div key={id} className='grid grid-cols-2 gap-x-6 pt-8 text-justify'>
+				<div
+					key={id}
+					className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-x-6 gap-y-6 pt-8 text-justify'
+				>
 					<div className='px-4'>
 						<img src={desc.image} alt={desc.title} className='w-full rounded' />
 						{/* Agent Details */}
@@ -172,7 +175,7 @@ const BuyDetail = () => {
 						<h2 className='font-semibold text-black text-xl py-4'>
 							Amenities:
 						</h2>
-						<div className='grid grid-cols-3 text-sm'>
+						<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 text-sm'>
 							<div>
 								<p className='flex flex-row gap-x-4 pb-4'>
 									<img src={tick} width={20} alt='' />
