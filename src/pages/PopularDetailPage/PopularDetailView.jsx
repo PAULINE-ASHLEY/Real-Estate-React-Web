@@ -9,7 +9,7 @@ function PopularDetailView() {
 					House Details
 				</h2>
 			</div>
-			<div className='px-20 pb-10'>
+			<div className='px-4 md:px-10 lg:px-20 xl:px-20 2xl:px-20 pb-10'>
 				<PopularDetail />
 			</div>
 		</PageWrapper>

@@ -28,7 +28,7 @@ function WelcomeSection() {
 					</p>
 				</div>
 				<form onSubmit={formik.handleSubmit} className='rounded px-10 py-10'>
-					<div className='grid sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-x-4 justify-center'>
+					<div className='grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-x-4 justify-center'>
 						<div></div>
 						<div>
 							<input
