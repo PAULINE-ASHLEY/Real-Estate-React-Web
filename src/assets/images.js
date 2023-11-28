@@ -46,3 +46,4 @@ export const buy9 = `${IMAGES_PATH}/buy9.jpg`;
 export const background = `${IMAGES_PATH}/background.jpg`;
 export const back = `${IMAGES_PATH}/back.png`;
 export const user = `${IMAGES_PATH}/user.png`;
+export const menu = `${IMAGES_PATH}/menu.png`;
