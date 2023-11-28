@@ -21,16 +21,12 @@ function WelcomeSection() {
 				style={{ backgroundImage: `url(${background})` }}
 				className='bg-cover pt-100px pb-250px'
 			>
-				<div className='text-3xl text-center text-white font-bold'>
-					<p>
-						<b className='text-red'>Real Paradise </b>.Your Home.
-						<b className='text-black'>Our Commitment.</b>
-					</p>
+				<div className='text-2xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl text-center text-white font-semibold'>
+					<p>Real Paradise. Your Home. Our Commitment.</p>
 				</div>
-				<form onSubmit={formik.handleSubmit} className='rounded px-10 py-10'>
-					<div className='grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-x-4 justify-center'>
-						<div></div>
-						<div>
+				<form onSubmit={formik.handleSubmit} className='rounded px-20 py-10'>
+					<div className='flex flex-col md:flex-col lg:flex-col xl:flex-col 2xl:flex-col gap-y-4 justify-center items-center'>
+						<div className='w-[70%]'>
 							<input
 								name='Search'
 								type='text'
@@ -44,10 +40,10 @@ function WelcomeSection() {
 								</div>
 							) : null}
 						</div>
-						<div>
+						<div className='w-[30%] flex justify-center'>
 							<button
 								type='submit'
-								className='px-4 h-10 text-base bg-black text-white rounded-full font-semibold'
+								className='px-10 h-10 text-base bg-black text-white rounded-full font-semibold'
 							>
 								Search
 							</button>
