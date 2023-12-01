@@ -52,7 +52,7 @@ const PopularDetail = () => {
 							<div className='text-black text-base font-semibold'>
 								<p>Name : {desc.AgentName}</p>
 								<p>Contact: {desc.AgentNumber}</p>
-								<p>Email Address: {desc.AgentEmail}</p>
+								<p className='text-left'>Email Address: {desc.AgentEmail}</p>
 							</div>
 						</div>
 						<h1 className='text-lg font-500 text-black pt-10'>
@@ -150,7 +150,7 @@ const PopularDetail = () => {
 							</div>
 						</form>
 					</div>
-					<div>
+					<div className='mt-4 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 px-4 md:px-0 lg:px-0 xl:px-0 2xl:px-0'>
 						<h2 className='font-semibold text-red text-2xl'>{desc.title}</h2>
 						<h2 className='font-semibold text-black text-xl pt-4'>Price:</h2>
 						<p className='pt-2 text-base font-400'>{desc.price}</p>

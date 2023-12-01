@@ -70,36 +70,35 @@ const NavBar = () => {
         `}
 				>
 					<li>
-						<NavLink to='/' className='py-7 px-3 inline-block'>
+						<NavLink to='/' className='py-4 px-3 inline-block'>
 							Home
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to='/Buy' className='py-7 px-3 inline-block'>
+						<NavLink to='/Buy' className='py-4 px-3 inline-block'>
 							Buy
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to='/Rent' className='py-7 px-3 inline-block'>
+						<NavLink to='/Rent' className='py-4 px-3 inline-block'>
 							Rent
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to='/Sell' className='py-7 px-3 inline-block'>
+						<NavLink to='/Sell' className='py-4 px-3 inline-block'>
 							Sell
 						</NavLink>
 					</li>
 					{/* <NavBarLinks /> */}
 					<li>
-						<NavLink to='/Contact' className='py-7 px-3 inline-block'>
+						<NavLink to='/Contact' className='py-4 px-3 inline-block'>
 							Contact
 						</NavLink>
 					</li>
-					<div>
+					<div className='py-5 flex flex-col px-20 gap-y-4'>
 						<button className='bg-white text-black rounded-full px-4 h-10 text-base font-semibold'>
 							<Link to='/SignIn'>Sign In</Link>
-						</button>{' '}
-						<br /> <br />
+						</button>
 						<button className='bg-white text-black rounded-full px-4 h-10 text-base font-semibold'>
 							<Link to='/SignUp'>Sign Up</Link>
 						</button>

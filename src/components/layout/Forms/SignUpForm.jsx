@@ -85,7 +85,7 @@ function SignUpForm() {
 						to='#'
 						className='px-2 text-center text-black w-[20%] text-base'
 					>
-						Or continue with
+						Or
 					</Link>
 					<div className='border-b border-black w-[80%] text-black'></div>
 				</div>
