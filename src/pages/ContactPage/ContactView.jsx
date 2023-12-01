@@ -21,7 +21,7 @@ function ContactView() {
 							<p className='text-white text-lg font-semibold'>Back</p>
 						</div>
 					</Link>
-					<div className='mt-20 px-20 md:px-10'>
+					<div className='mt-20 px-10 md:px-10'>
 						<h2 className='font-400 text-white text-2xl pb-6'>
 							Want to talk to us anytime ?
 						</h2>
